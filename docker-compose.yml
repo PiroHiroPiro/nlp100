@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./docker/python/Dockerfile
-    container_name: docker_template_python
+    container_name: nlp100_python
     ports:
       - "8888:8888"
     volumes:
