@@ -9,6 +9,7 @@ flake8 = "*"
 
 [packages]
 jupyter = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"
