@@ -10,6 +10,8 @@ flake8 = "*"
 [packages]
 jupyter = "*"
 requests = "*"
+matplotlib = "*"
+japanize-matplotlib = "*"
 
 [requires]
 python_version = "3.6"
