@@ -8,10 +8,6 @@ WORKDIR /usr/src
 RUN apt-get update -y --fix-missing && \
       apt-get install -y --no-install-recommends \
       sudo \
-    #   mecab \
-    #   libmecab-dev \
-    #   mecab-utils \
-    #   mecab-ipadic-utf8 \
       make \
       curl \
       xz-utils \
