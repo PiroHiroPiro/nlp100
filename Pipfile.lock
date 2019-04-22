@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "cc635ae2dd559bdfb2ca217e9c64aca5b81d75e19b62459d8a25ef8d8b59c7fe"
+            "sha256": "9ca522c6287c6fa1e683d255ef852e4d6d61797ca38201b8696298a304fc09ca"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -265,6 +265,13 @@
             ],
             "index": "pypi",
             "version": "==3.0.3"
+        },
+        "mecab-python3": {
+            "hashes": [
+                "sha256:5aca4d0d196161e41452b89921042c0e61a6b7e7e9373211c0c1c50d1809055d"
+            ],
+            "index": "pypi",
+            "version": "==0.996.1"
         },
         "mistune": {
             "hashes": [
