@@ -81,8 +81,6 @@ RUN cd /tmp \
     && rm /tmp/cookies.txt \
     && ldconfig
 
-RUN apt-get -y graphviz
-
 COPY ./Pipfile  ./
 COPY ./Pipfile.lock ./
 
