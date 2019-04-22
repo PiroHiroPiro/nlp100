@@ -7,7 +7,7 @@ services:
       dockerfile: ./docker/python/Dockerfile
     container_name: nlp100_python
     ports:
-      - "8888:8888"
+      - "8890:8888"
     volumes:
       - ./source:/usr/src/source
     env_file:
