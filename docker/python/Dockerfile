@@ -13,7 +13,8 @@ RUN apt-get update -y --fix-missing && \
       xz-utils \
       file \
       patch \
-      locales
+      locales \
+      graphviz
 
 RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen ja_JP.UTF-8 && \
@@ -79,6 +80,8 @@ RUN cd /tmp \
     && rm -rf /tmp/cabocha-0.69 \
     && rm /tmp/cookies.txt \
     && ldconfig
+
+RUN apt-get -y graphviz
 
 COPY ./Pipfile  ./
 COPY ./Pipfile.lock ./
