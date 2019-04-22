@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9ca522c6287c6fa1e683d255ef852e4d6d61797ca38201b8696298a304fc09ca"
+            "sha256": "910b33bd7d7cd821fda24068b66e98658bbd9149c5745b0b80bb858d8725f113"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -266,13 +266,6 @@
             "index": "pypi",
             "version": "==3.0.3"
         },
-        "mecab-python3": {
-            "hashes": [
-                "sha256:5aca4d0d196161e41452b89921042c0e61a6b7e7e9373211c0c1c50d1809055d"
-            ],
-            "index": "pypi",
-            "version": "==0.996.1"
-        },
         "mistune": {
             "hashes": [
                 "sha256:59a3429db53c50b5c6bcc8a07f8848cb00d7dc8bdb431a4ab41920d201d4756e",
@@ -379,13 +372,13 @@
             "markers": "os_name != 'nt'",
             "version": "==0.6.0"
         },
-        "pydot": {
+        "pydot-ng": {
             "hashes": [
-                "sha256:67be714300c78fda5fd52f79ec994039e3f76f074948c67b5ff539b433ad354f",
-                "sha256:d49c9d4dd1913beec2a997f831543c8cbd53e535b1a739e921642fe416235f01"
+                "sha256:251ec5cde0d20ebd467b12fd8a4db0f52d2fbf6e12660a969a226823ba38644e",
+                "sha256:8c8073b97aa7030c28118961e2c6c92f046e4cb57aeba7df87146f7baa6530c5"
             ],
             "index": "pypi",
-            "version": "==1.4.1"
+            "version": "==2.0.0"
         },
         "pygments": {
             "hashes": [
