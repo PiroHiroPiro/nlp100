@@ -137,6 +137,7 @@ pip-selfcheck.json
 # End of https://www.gitignore.io/api/python,virtualenv
 
 # custom ignore
+.idea
 source/ch2/*
 !source/ch2/source.ipynb
 source/ch3/*
