@@ -13,7 +13,8 @@ RUN apt-get update -y --fix-missing && \
       xz-utils \
       file \
       patch \
-      locales
+      locales \
+      fonts-ipafont
 
 RUN echo "ja_JP.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen ja_JP.UTF-8 && \
