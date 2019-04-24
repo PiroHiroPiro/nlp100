@@ -8,6 +8,8 @@ WORKDIR /usr/src
 RUN apt-get update -y --fix-missing && \
       apt-get install -y --no-install-recommends \
       sudo \
+      git \
+      vim \
       make \
       curl \
       xz-utils \
@@ -34,19 +36,26 @@ RUN cd /tmp \
     && cd / \
     && rm /tmp/mecab-0.996.tar.gz \
     && rm -fr /tmp/mecab-0.996 \
-    # && echo "/usr/local/lib" > /etc/ld.so.conf.d/mecab.conf \
     && ldconfig
 
+# RUN cd /tmp \
+#     && curl -L -o mecab-ipadic-2.7.0-20070801.tar.gz "https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM" \
+#     && tar zxfv mecab-ipadic-2.7.0-20070801.tar.gz \
+#     && cd mecab-ipadic-2.7.0-20070801 \
+#     && ./configure --with-charset=utf8 \
+#     && make \
+#     && make install \
+#     && cd / \
+#     && rm /tmp/mecab-ipadic-2.7.0-20070801.tar.gz \
+#     && rm -rf /tmp/mecab-ipadic-2.7.0-20070801 \
+#     && ldconfig
+
 RUN cd /tmp \
-    && curl -L -o mecab-ipadic-2.7.0-20070801.tar.gz "https://drive.google.com/uc?export=download&id=0B4y35FiV1wh7MWVlSDBCSXZMTXM" \
-    && tar zxfv mecab-ipadic-2.7.0-20070801.tar.gz \
-    && cd mecab-ipadic-2.7.0-20070801 \
-    && ./configure --with-charset=utf8 \
-    && make \
-    && make install \
+    && git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git \
+    && cd mecab-ipadic-neologd \
+    && ./bin/install-mecab-ipadic-neologd -n -u -y \
     && cd / \
-    && rm /tmp/mecab-ipadic-2.7.0-20070801.tar.gz \
-    && rm -rf /tmp/mecab-ipadic-2.7.0-20070801 \
+    && rm -rf /tmp/mecab-ipadic-neologd \
     && ldconfig
 
 RUN cd /tmp \
@@ -80,6 +89,9 @@ RUN cd /tmp \
     && rm -rf /tmp/cabocha-0.69 \
     && rm /tmp/cookies.txt \
     && ldconfig
+
+COPY ./docker/python/etc/mecabrc /usr/local/etc/
+COPY ./docker/python/etc/cabocharc /usr/local/etc/
 
 RUN apt-get install -y --no-install-recommends graphviz
 
