@@ -2,7 +2,7 @@
 
 ## Requirement
 
-- [docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/)
   - docker-compose
 
 ## Usage
