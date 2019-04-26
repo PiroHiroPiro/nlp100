@@ -1,6 +1,35 @@
 # [言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/)
 
-```
-$ docker-compose build
+## Requirement
+
+- [docker](https://www.docker.com/)
+  - docker-compose
+
+## Usage
+
+Run Jupyter notebook:
+
+```console
 $ docker-compose up
 ```
+
+Go to `http://localhost:8890` and you'll see the notebooks.
+
+## Install
+
+Clone repository:
+
+```console
+$ git clone https://github.com/PiroHiroPiro/nlp100
+$ cd nlp100
+```
+
+Build image:
+
+```console
+$ docker-compose build
+```
+
+## Author
+
+[Hiroyuki Nishizawa](https://github.com/PiroHiroPiro)
