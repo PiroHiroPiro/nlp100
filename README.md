@@ -1,8 +1,10 @@
-# [言語処理100本ノック](http://www.cl.ecei.tohoku.ac.jp/nlp100/)
+# 言語処理100本ノック
+
+A repository for learning [NLP100](http://www.cl.ecei.tohoku.ac.jp/nlp100/).
 
 ## Requirement
 
-- [docker](https://www.docker.com/)
+- [Docker](https://www.docker.com/)
   - docker-compose
 
 ## Usage

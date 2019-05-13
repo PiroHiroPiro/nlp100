@@ -2,16 +2,16 @@ FROM python:3.7
 
 ENV PYTHONUNBUFFERED=1
 
-RUN apt-get update -y --fix-missing && \
-      apt-get install -y --no-install-recommends \
-      git \
-      make \
-      curl \
-      xz-utils \
-      file \
-      patch \
-      locales \
-      fonts-ipafont
+RUN apt-get update -y --fix-missing \
+    && apt-get install -y --no-install-recommends \
+    git \
+    make \
+    curl \
+    xz-utils \
+    file \
+    patch \
+    locales \
+    fonts-ipafont
 
 ENV DEBIAN_FRONTEND noninteractive
 
