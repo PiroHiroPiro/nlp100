@@ -98,8 +98,8 @@ ENV PIPENV_VENV_IN_PROJECT=1
 
 COPY ./source/Pipfile  ./
 
-RUN pip install --upgrade pip
-RUN pip install pipenv
-RUN pipenv install --skip-lock --system --dev --
+RUN pip install --upgrade pip \
+    && pip install pipenv \
+    && pipenv install --skip-lock --system --dev
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root"]
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--NotebookApp.token="]
