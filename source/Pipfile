@@ -4,8 +4,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pylint = "*"
-flake8 = "*"
 
 [packages]
 jupyter = "*"
@@ -13,10 +11,9 @@ requests = "*"
 matplotlib = "*"
 japanize-matplotlib = "*"
 pydot-ng = "*"
+nltk = "*"
+scikit-learn = "*"
+seaborn = "*"
 
 [requires]
 python_version = "3.7"
-
-[scripts]
-pylint = "pylint source/ --disable='C0103,C0111,C0301,R0201,R0903,E0401,E0611'"
-flake = "flake8 --show-source source/ --ignore='E501'"
