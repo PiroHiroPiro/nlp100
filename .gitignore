@@ -252,3 +252,7 @@ $RECYCLE.BIN/
 source/ch9/*
 !source/ch9/source.ipynb
 !source/ch9/english_country_name.csv
+
+source/ch10/*
+!source/ch10/source.ipynb
+!source/ch10/english_country_name.csv
